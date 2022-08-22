@@ -1,0 +1,24 @@
+<div class="header">
+    <h2 class="hello-header">Hello {{user.username}}</h2>
+    <a class="homepage-navigation" href="/Home">Home Page</a>
+    <hr>
+</div>
+<div class="signin-container">
+    <h1>Create Order</h1>
+    <div class="order-icon">
+        <img class="order-icon" src="../../../assets/Icons/delivery-truck.png">
+    </div>
+    <hr>
+    <form #orderForm="ngForm" class="input-container">
+        <select class="is-info signin-inupt is-large select" name="city" ngModel>
+            <option value="">Select City</option>
+            <option class="is-info signin-inupt is-large select" *ngFor="let city of cities" value={{city}}>{{city}}
+            </option>
+        </select><br>
+        <input class="is-info signin-inupt is-large input" type="text" placeholder="Street" name="street" ngModel><br>
+        <input class="is-info signin-inupt is-large input" min={{currentDate}} type="date" placeholder="Shipping Date" name="shippingDate" ngModel><br>
+        <input class="is-info signin-inupt is-large input" type="text" maxlength="4" placeholder="Credit Card" name="creditCard" ngModel><br>
+        <span class="order-info">Total Price: {{cart?.totalPrice}}$</span><br><br>
+        <button class="button is-link is-light is-large signin-inupt signin-button" (click)="createOrder(orderForm)" type="submit">Place Order</button>
+    </form>
+</div>

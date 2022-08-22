@@ -1,0 +1,31 @@
+<div class="adminDash-container">
+    <br>
+    <div class="admin-navbar">
+        <h1 class="welcome-admin-header">Admin Dashboard</h1>
+        <h2 class="admin-dashboard-header">Admin: {{user.username}}</h2>
+        <a class="nav-button" href="/home">Home Page</a>
+    </div>
+    <button class="add-button btn-hover color-1" (click)="createNewProductPage()">Add Product</button>
+    <table class="table table-hover">
+        <thead>
+            <tr class="head-row">
+                <th id="rowrow">product</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Image</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products">
+                <td>{{product.productName}}</td>
+                <td>{{product.price}}</td>
+                <td>{{product?.categoryId?.categoryName}}</td>
+                <td>{{product.image}}</td>
+                <td class="modify-row"><img class="modify-button"  (click)="updateProductPage(product)" src="../../../assets/Icons/edit.png"></td>
+                <td class="modify-row"><img class="modify-button" (click)="removeProduct(product._id)" src="../../../assets/Icons/remove.png"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

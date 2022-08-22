@@ -1,0 +1,13 @@
+<div class="categories-container card">
+    <div *ngFor="let category of categories" class="category-box" (click)="getCurrentCategory(category)">
+        <img class="category-img" src={{category.categoryImage}} alt="">
+        <span class="category-title">{{category.categoryName}}</span>
+    </div>
+</div>
+
+<div class="basket-container">
+    <div class="basket-box card">
+        <img class="basket-img" src="../../../../assets/Icons/shopping-cart.png" alt="">
+        <h3 class="price-tag">{{currentCart.totalPrice}}$</h3>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+<div class="header">
+    <br>
+    <h1 class="hello-head">Hello {{user.username}}</h1>
+    <h2 class="order-head">Your Orders History</h2>
+    <a class="homepage-navigation" href="/Home">Home Page</a>
+    <hr>
+</div>
+<br>
+
+<!-- <div  *ngIf="orders === []" >
+    <br><br><br><br>
+    <p class="no-orders">You Haven't Placed Orders Yet...</p>
+</div> -->
+
+<div class="table-main">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Total Price</th>
+                <th>City</th>
+                <th>Street</th>
+                <th>Order Created</th>
+                <th>Shipping Date</th>
+                <th>Credit Card</th>
+            </tr>
+        </thead>
+        <tbody *ngFor=" let order of orders">
+            <tr>
+                <td>{{order.totalPrice}} $</td>
+                <td>{{order.city}}</td>
+                <td>{{order.street}}</td>
+                <td>{{order.orderCreated.substring(2,10)}}</td>
+                <td>{{order.shippingDate.substring(2,10)}}</td>
+                <td>{{order.creditCard}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</div>

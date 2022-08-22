@@ -1,0 +1,93 @@
+* {
+    text-align: center !important;
+}
+
+.adminDash-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #f3f5f8;
+}
+
+.welcome-admin-header {
+    font-size: 6rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.admin-dashboard-header {
+    font-size: 2rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav-button {
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    font-size: large;
+}
+
+.add-button {
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    background-color: #796ebe;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.btn-hover {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+.modify-row {
+    width: 10%;
+}
+
+.modify-button {
+    width: 25%;
+    height: 25%;
+    cursor: pointer;
+}

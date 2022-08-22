@@ -1,0 +1,49 @@
+    * {
+        text-align: center !important
+    }
+    
+    .header {
+        font-family: 'Quicksand', sans-serif;
+    }
+    
+    .hello-head {
+        font-size: 2rem;
+    }
+    
+    .order-head {
+        font-size: 4rem;
+    }
+    
+    .homepage-navigation {
+        text-decoration: underline;
+        color: #515151;
+        font-size: 1.3rem;
+    }
+    
+    .homepage-navigation:hover {
+        color: #a660e0;
+    }
+    
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    td,
+    th {
+        border: 1px solid #dddddd;
+        padding: 8px;
+        font-size: large;
+    }
+    
+    .head-row {
+        text-align: center !important
+    }
+    
+    .no-orders {
+        font-size: 8rem;
+        font-family: 'Quicksand', sans-serif;
+        font-style: oblique;
+        color: #c892f5;
+    }

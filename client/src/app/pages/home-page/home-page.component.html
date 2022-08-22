@@ -1,0 +1,14 @@
+<div class="main-container">
+    <div class="grid-item-1">
+        <app-navbar (categoryEmmiter)="reciveCategory($event)"></app-navbar>
+    </div>
+    <div class="grid-item-2">
+        <app-body [currentCategory]="currentCategory"></app-body>
+    </div>
+    <div class="grid-item-3">
+        <app-sidebar></app-sidebar>
+    </div>
+    <div class="grid-item-4">
+        <app-footer></app-footer>
+    </div>
+</div>

@@ -1,0 +1,72 @@
+.basket-product-container {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.basket-product-container-middle {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 1vw;
+    color: #515151;
+    font-weight: bold;
+}
+
+.basket-product-container-left {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.amount {
+    font-size: larger;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 1.2vw;
+    color: #515151;
+    font-weight: 900;
+    z-index: 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.amounts-selector {
+    cursor: pointer;
+}
+
+.basket-product-container-right {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.remove-selector {
+    cursor: pointer;
+    width: 70%;
+    height: 30%;
+    transition: 0.2s;
+}
+
+.remove-selector:hover {
+    width: 80%;
+    height: 35%;
+    transition: 0.2s;
+}

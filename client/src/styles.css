@@ -1,0 +1,74 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~bootstrap/dist/css/bootstrap.css";
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    scroll-behavior: smooth;
+    background-color: #f3f5f8;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 80vw 20vw;
+    grid-template-rows: 20vh 80vh 10vh;
+    grid-template-areas: "header header""main sidebar""footer footer";
+}
+
+.grid-item-1 {
+    grid-area: header;
+}
+
+.grid-item-2 {
+    grid-area: main;
+}
+
+.grid-item-3 {
+    grid-area: sidebar;
+    background-color: #f3f5f8;
+}
+
+.grid-item-4 {
+    grid-area: footer;
+    background-color: #f3f5f8;
+    box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+app-navbar {
+    display: grid;
+    grid-template-rows: 10vh 10vh;
+    grid-template-areas: "navbar-up""navbar-down";
+}
+
+app-navbar-up {
+    grid-area: navbar-up;
+    background-color: #f3f5f8;
+    display: flex;
+    flex-direction: row;
+}
+
+app-navbar-down {
+    grid-area: navbar-down;
+    display: flex;
+    background-color: #f3f5f8;
+    flex-direction: row;
+}
+
+app-admin {
+    height: 100vh;
+    width: 100vw;
+}

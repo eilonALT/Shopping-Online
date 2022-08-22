@@ -1,0 +1,128 @@
+.logo-container {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.supermarket-title {
+    color: #515151;
+    font-family: 'Quicksand', sans-serif;
+    font-style: oblique;
+}
+
+.supermarket-title img {
+    max-width: 4vw;
+    max-height: 4vw;
+}
+
+.super-title {
+    text-decoration: underline;
+    color: #a660e0;
+    font-size: 2.5vw;
+}
+
+.market-title {
+    color: #b6b6fb;
+    font-size: 2.5vw;
+}
+
+.cart-title {
+    width: 10%;
+}
+
+.search-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-buttons {
+    width: 20%;
+    height: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+.login-buttons:hover {
+    height: 100%;
+    width: 23%;
+    transition-duration: 0.3s;
+}
+
+.search-icon {
+    position: absolute;
+    z-index: 1;
+    width: 15%;
+    height: 60%;
+    left: 80%;
+    top: 20%;
+}
+
+.loggedUserContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.user-side {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.loggedUserButtonsContainer {
+    color: #515151;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.3rem;
+    font-style: oblique;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+    width: 40%;
+}
+
+.person-icon {
+    width: 18%;
+    height: 75%;
+}
+
+.helloUser {
+    color: #515151;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem;
+    font-style: oblique;
+}
+
+.loggedUserButtons {
+    text-decoration: underline;
+}
+
+.loggedUserButtons:hover {
+    color: #a660e0;
+}
+
+.orders-navigation-button {
+    color: #515151;
+    text-decoration: underline
+}

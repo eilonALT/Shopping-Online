@@ -1,0 +1,67 @@
+.signup-container {
+    height: 60vh;
+    width: 40vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(180, 205, 213);
+    border-radius: 10%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+.headline {
+    text-align: center;
+    font-size: 5em;
+    font-family: 'Quicksand', sans-serif;
+    font-style: oblique;
+}
+
+.signup-icon {
+    margin: auto;
+    text-align: center;
+    height: 10vh;
+    width: 5vw;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.signup-inupt {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-button {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+}
+
+.goBack-button {
+    width: 20%;
+}
+
+.admin-navbar {
+    text-align: center;
+}
+
+.welcome-admin-header {
+    font-size: 6rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav-buttons {
+    margin: auto;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-button {
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}

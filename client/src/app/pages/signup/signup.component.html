@@ -1,0 +1,34 @@
+<div class="signup-container">
+    <h1>Sign Up</h1>
+    <div class="signup-icon">
+        <img class="signup-icon" src="../../../assets/Icons/man.png">
+    </div>
+    <hr>
+    <form #signupForm1="ngForm" *ngIf="showNextStep" class="input-container">
+        <input class="is-info signup-inupt is-large input" type="username" placeholder="Username" name="username"
+            ngModel><br>
+        <input class="is-info signup-inupt is-large input" type="password" placeholder="Password" name="password"
+            ngModel><br>
+        <input class="is-info signup-inupt is-large input" type="password" placeholder="Confirm Password"
+            name="confirmPassword" ngModel><br>
+        <input class="is-info signup-inupt is-large input" type="number" placeholder="ID Number" name="idNumber"
+            ngModel><br>
+        <button (click)="validateFormOne(signupForm1)"
+            class="button is-link is-light is-large signup-inupt signup-button" type="submit">Next Step</button>
+    </form>
+    <form #signupForm2="ngForm" *ngIf="showLastStep" class="input-container">
+        <input class="is-info signup-inupt is-large input" type="text" placeholder="First Name" name="firstName" ngModel
+            required><br>
+        <input class="is-info signup-inupt is-large input" type="text" placeholder="Last Name" name="lastName" ngModel
+            required><br>
+        <select class="is-info signup-inupt is-large select" name="city" ngModel>
+            <option class="is-info signup-inupt is-large select" *ngFor="let city of cities" value={{city}}>{{city}}
+            </option>
+        </select><br>
+        <input class="is-info signup-inupt is-large input" type="text" placeholder="Street" name="street" ngModel><br>
+        <button class="button is-link is-light is-large signup-inupt signup-button"
+            (click)="validateFormTwo(signupForm2)" type="submit">Sign Up</button><br>
+        <button (click)="toggleSteps()" class="button is-link is-light is-medium signup-inupt goBack-button"
+            type="submit">GO BACK</button>
+    </form>
+</div>

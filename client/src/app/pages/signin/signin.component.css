@@ -1,0 +1,45 @@
+.signin-container {
+    height: 80vh;
+    width: 40vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(180, 205, 213);
+    border-radius: 10%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 6em;
+    font-family: 'Quicksand', sans-serif;
+    font-style: oblique;
+    color: #81a7f3;
+}
+
+.signin-icon {
+    margin: auto;
+    text-align: center;
+    height: 10vh;
+    width: 5vw;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.signin-inupt {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-button {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+}
+
+.goBack-button {
+    width: 20%;
+}

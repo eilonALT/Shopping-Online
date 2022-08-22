@@ -1,0 +1,16 @@
+<div class="basket-product-container card">
+    <div class="basket-product-container-left">
+        <div class="amount">
+            <p class="amounts-selector" (click)="amountPlus()">+</p>
+            <p *ngIf="cartProduct">&nbsp;{{cartProduct.amount}}&nbsp;</p>
+            <p class="amounts-selector" (click)="amountMinus()">-</p>
+        </div>
+    </div>
+    <div class="basket-product-container-middle">
+        <p *ngIf="product">{{product.productName}}</p>
+        <p *ngIf="product" class="basket-product-text">Price: {{product.price}}$</p>
+    </div>
+    <div class="basket-product-container-right">
+        <img (click)="removeCartProduct(cartProduct._id)" class="remove-selector" src="../../../assets/Icons/remove.png">
+    </div>
+</div>

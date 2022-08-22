@@ -1,0 +1,13 @@
+<div class="card product-card">
+    <div class="image card-image">
+        <img style="height:150px; width: 150px; margin:auto;" src={{product.image}} alt="Placeholder image">
+    </div>
+    <div class="media-content title ">
+        <span class="title">{{product.productName}}</span><br>
+        <span class="subtitle card-text is-4">Price:</span>
+        <span class="subtitle is-5"> {{product.price}}$</span>
+    </div>
+    <footer class="card-footer">
+        <a class="card-footer-item effect-underline" (click)="addToCart(product)">Add To Cart</a>
+    </footer>
+</div>

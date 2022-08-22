@@ -1,0 +1,12 @@
+<div class="sidebar-container card">
+    <div class="basket-container" *ngIf="cart">
+        <app-basket-product *ngFor="let product of cart.cartProducts" [cartProductId]="product"></app-basket-product>
+    </div>
+    <div class="order-button">
+        <a (click)="placeOrder()">
+            <img class="order-img" src="../../../assets/Icons/payment-method.png" alt="loading">
+            <span class="order-text">Place Order</span>
+        </a>
+    </div>
+
+</div>

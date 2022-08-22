@@ -1,0 +1,78 @@
+.sidebar-container {
+    height: 100%;
+    width: 78%;
+    border-radius: 10px;
+    margin-left: 15%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.basket-container {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.order-button {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.order-button a {
+    width: 100%;
+    height: 100%;
+    background: rgb(243, 153, 255);
+    background: linear-gradient(90deg, rgba(243, 153, 255, 1) 0%, rgba(75, 34, 227, 1) 100%);
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.7s;
+}
+
+.order-button a span {
+    font-size: larger;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+.order-img {
+    width: 30%;
+    height: 50%;
+    position: relative;
+}
+
+.order-button a:hover {
+    background: rgb(243, 153, 255);
+    background: linear-gradient(-90deg, rgba(243, 153, 255, 1) 0%, rgba(75, 34, 227, 1) 100%);
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    transition: 0.7s;
+}
+
+app-basket-product {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
